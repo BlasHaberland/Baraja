@@ -2,9 +2,9 @@ package org.example;
 
 public class Carta {
     private int valor;
-    private char palo;
+    private Palo palo;
 
-    public Carta(int valor, char palo) {
+    public Carta(int valor, Palo palo) {
         this.valor = valor;
         this.palo = palo;
     }
@@ -17,19 +17,16 @@ public class Carta {
         this.valor = valor;
     }
 
-    public char getPalo() {
+    public Palo getPalo() {
         return palo;
     }
 
-    public void setPalo(char palo) {
+    public void setPalo(Palo palo) {
         this.palo = palo;
     }
 
     @Override
     public String toString() {
-        return "Carta{" +
-                "valor=" + valor +
-                ", palo=" + palo +
-                '}';
+        return "Carta{" + "valor=" + valor + ", palo=" + palo + '}';
     }
 }
